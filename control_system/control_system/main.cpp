@@ -7,9 +7,23 @@
 //
 
 #include <iostream>
+#include "saturation.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    
+    // Test saturation block
+    saturation test_sat;
+    
+    std:: vector<double> input = {-0.5, 5, 1000, 4, -2, 3, 4, -500};
+    double lb = -10, ub = 10;
+    
+    //test_sat.sat(lb, ub); // no input
+    
+    test_sat.getInputArray(input);
+    test_sat.sat(lb, ub);
+    test_sat.printInputArray();
+    test_sat.printOutputArray();
+    
     return 0;
 }
