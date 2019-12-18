@@ -60,11 +60,43 @@
 		D071C52923A8B456009BBDF1 /* control_system */ = {
 			isa = PBXGroup;
 			children = (
-				D071C52A23A8B456009BBDF1 /* main.cpp */,
-				D071C53123A8BB66009BBDF1 /* saturation.cpp */,
-				D071C53223A8BB66009BBDF1 /* saturation.hpp */,
+				D071C53423AA1149009BBDF1 /* include */,
+				D071C53523AA115A009BBDF1 /* src */,
+				D071C53623AA1162009BBDF1 /* tests */,
+				D071C53723AA1202009BBDF1 /* libs */,
 			);
 			path = control_system;
+			sourceTree = "<group>";
+		};
+		D071C53423AA1149009BBDF1 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D071C53223A8BB66009BBDF1 /* saturation.hpp */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		D071C53523AA115A009BBDF1 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D071C53123A8BB66009BBDF1 /* saturation.cpp */,
+				D071C52A23A8B456009BBDF1 /* main.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D071C53623AA1162009BBDF1 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		D071C53723AA1202009BBDF1 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
