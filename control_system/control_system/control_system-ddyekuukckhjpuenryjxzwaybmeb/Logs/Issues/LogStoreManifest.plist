@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>32472823-2378-4103-BD8E-D7A20F001E57</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.bundle</string>
+			<key>fileName</key>
+			<string>32472823-2378-4103-BD8E-D7A20F001E57.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>control_systemUT-ddyekuukckhjpuenryjxzwaybmeb</string>
+			<key>timeStartedRecording</key>
+			<real>598520004.64970505</real>
+			<key>timeStoppedRecording</key>
+			<real>598520005.90592802</real>
+			<key>title</key>
+			<string>Build target control_systemUT</string>
+			<key>uniqueIdentifier</key>
+			<string>32472823-2378-4103-BD8E-D7A20F001E57</string>
+		</dict>
+		<key>DB0BC861-8D49-40A7-B5A3-98B3DA9169F3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
+			<key>fileName</key>
+			<string>DB0BC861-8D49-40A7-B5A3-98B3DA9169F3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>control_system-ddyekuukckhjpuenryjxzwaybmeb</string>
+			<key>timeStartedRecording</key>
+			<real>598519889.73248601</real>
+			<key>timeStoppedRecording</key>
+			<real>598519889.78982794</real>
+			<key>title</key>
+			<string>Build target control_system</string>
+			<key>uniqueIdentifier</key>
+			<string>DB0BC861-8D49-40A7-B5A3-98B3DA9169F3</string>
+		</dict>
+	</dict>
+	<key>preserveOldLogs</key>
+	<true/>
+</dict>
+</plist>

@@ -14,6 +14,23 @@
 saturation::output::output()
 {
     isValid = false;
+    outputArray.clear();
+}
+
+saturation::output::~output()
+{
+    isValid = false;
+    outputArray.clear();
+}
+
+saturation::saturation()
+{
+    data = new saturation::output;
+}
+
+saturation::~saturation()
+{
+    delete data;
 }
 
 void saturation::getInputArray(std::vector<double>& array)
@@ -31,15 +48,15 @@ void saturation::sat(double lb, double ub)
         {
             if(num >= ub)
             {
-                data.outputArray.push_back(ub);
+                data->outputArray.push_back(ub);
                 continue;
             }
             if(num <= lb)
             {
-                data.outputArray.push_back(lb);
+                data->outputArray.push_back(lb);
                 continue;
             }
-            data.outputArray.push_back(num);
+            data->outputArray.push_back(num);
         }
     }
 }
@@ -56,11 +73,11 @@ void saturation::printInputArray()
 
 void saturation::printOutputArray()
 {
-    if(checkValid(data.outputArray))
+    if(checkValid(data->outputArray))
     {
         std::cout << "The output array is" << std::endl;
-        for(int i = 0; i < data.outputArray.size(); ++i)
-            std::cout << data.outputArray[i] << std::endl;
+        for(int i = 0; i < data->outputArray.size(); ++i)
+            std::cout << data->outputArray[i] << std::endl;
     }
 }
 

@@ -8,22 +8,19 @@
 
 #include <iostream>
 #include "saturation.hpp"
+#include "gtest/gtest.h"
+
 
 int main(int argc, const char * argv[]) {
+     
+    saturation* test_sat;
     
+    test_sat = new saturation;
     
-    // Test saturation block
-    saturation test_sat;
+    std::cout << test_sat->data->isValid << std::endl;
     
-    std:: vector<double> input = {-0.5, 5, 1000, 4, -2, 3, 4, -500};
-    double lb = -10, ub = 10;
-    
-    //test_sat.sat(lb, ub); // no input
-    
-    test_sat.getInputArray(input);
-    test_sat.sat(lb, ub);
-    test_sat.printInputArray();
-    test_sat.printOutputArray();
-    
+    // Google test
+    //testing::InitGoogleTest(&argc, argv);
+    //return RUN_ALL_TESTS();
     return 0;
 }

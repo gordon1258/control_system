@@ -9,6 +9,36 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>control_systemUT.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>D071C52623A8B456009BBDF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D071C54023AAB69A009BBDF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D071C55723AAF828009BBDF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D071C56223AB0471009BBDF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

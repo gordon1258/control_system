@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D071C52B23A8B456009BBDF1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D071C52A23A8B456009BBDF1 /* main.cpp */; };
 		D071C53323A8BB66009BBDF1 /* saturation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D071C53123A8BB66009BBDF1 /* saturation.cpp */; };
+		D071C56623AB0471009BBDF1 /* control_systemUT.m in Sources */ = {isa = PBXBuildFile; fileRef = D071C56523AB0471009BBDF1 /* control_systemUT.m */; };
+		D071C56F23AC6FF3009BBDF1 /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D071C56E23AC6FC6009BBDF1 /* libgtest_main.a */; };
+		D071C57023AC6FF3009BBDF1 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D071C56D23AC6FC6009BBDF1 /* libgtest.a */; };
+		D071C57323AC72CD009BBDF1 /* saturation_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D071C55123AAD99C009BBDF1 /* saturation_test.cpp */; };
+		D071C57423AC7305009BBDF1 /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D071C56E23AC6FC6009BBDF1 /* libgtest_main.a */; };
+		D071C57523AC7305009BBDF1 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D071C56D23AC6FC6009BBDF1 /* libgtest.a */; };
+		D071C57923AC73CB009BBDF1 /* GoogleTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = D071C57823AC73CB009BBDF1 /* GoogleTests.mm */; };
+		D071C57F23AC8ED7009BBDF1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D071C52A23A8B456009BBDF1 /* main.cpp */; };
+		D075EC2823ACB04F002167A3 /* saturation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D071C53123A8BB66009BBDF1 /* saturation.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +36,13 @@
 		D071C52A23A8B456009BBDF1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D071C53123A8BB66009BBDF1 /* saturation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = saturation.cpp; sourceTree = "<group>"; };
 		D071C53223A8BB66009BBDF1 /* saturation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = saturation.hpp; sourceTree = "<group>"; };
+		D071C55123AAD99C009BBDF1 /* saturation_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = saturation_test.cpp; sourceTree = "<group>"; };
+		D071C56323AB0471009BBDF1 /* control_systemUT.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = control_systemUT.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D071C56523AB0471009BBDF1 /* control_systemUT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = control_systemUT.m; sourceTree = "<group>"; };
+		D071C56723AB0471009BBDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D071C56D23AC6FC6009BBDF1 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../googletest/googletest/build/lib/libgtest.a; sourceTree = "<group>"; };
+		D071C56E23AC6FC6009BBDF1 /* libgtest_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest_main.a; path = ../../googletest/googletest/build/lib/libgtest_main.a; sourceTree = "<group>"; };
+		D071C57823AC73CB009BBDF1 /* GoogleTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GoogleTests.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +50,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D071C56F23AC6FF3009BBDF1 /* libgtest_main.a in Frameworks */,
+				D071C57023AC6FF3009BBDF1 /* libgtest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D071C56023AB0471009BBDF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D071C57423AC7305009BBDF1 /* libgtest_main.a in Frameworks */,
+				D071C57523AC7305009BBDF1 /* libgtest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +71,9 @@
 			isa = PBXGroup;
 			children = (
 				D071C52923A8B456009BBDF1 /* control_system */,
+				D071C56423AB0471009BBDF1 /* control_systemUT */,
 				D071C52823A8B456009BBDF1 /* Products */,
+				D071C53823AAAF30009BBDF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				D071C52723A8B456009BBDF1 /* control_system */,
+				D071C56323AB0471009BBDF1 /* control_systemUT.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +117,7 @@
 		D071C53623AA1162009BBDF1 /* tests */ = {
 			isa = PBXGroup;
 			children = (
+				D071C55123AAD99C009BBDF1 /* saturation_test.cpp */,
 			);
 			path = tests;
 			sourceTree = "<group>";
@@ -97,6 +127,25 @@
 			children = (
 			);
 			path = libs;
+			sourceTree = "<group>";
+		};
+		D071C53823AAAF30009BBDF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D071C56E23AC6FC6009BBDF1 /* libgtest_main.a */,
+				D071C56D23AC6FC6009BBDF1 /* libgtest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D071C56423AB0471009BBDF1 /* control_systemUT */ = {
+			isa = PBXGroup;
+			children = (
+				D071C57823AC73CB009BBDF1 /* GoogleTests.mm */,
+				D071C56523AB0471009BBDF1 /* control_systemUT.m */,
+				D071C56723AB0471009BBDF1 /* Info.plist */,
+			);
+			path = control_systemUT;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +168,23 @@
 			productReference = D071C52723A8B456009BBDF1 /* control_system */;
 			productType = "com.apple.product-type.tool";
 		};
+		D071C56223AB0471009BBDF1 /* control_systemUT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D071C56823AB0471009BBDF1 /* Build configuration list for PBXNativeTarget "control_systemUT" */;
+			buildPhases = (
+				D071C55F23AB0471009BBDF1 /* Sources */,
+				D071C56023AB0471009BBDF1 /* Frameworks */,
+				D071C56123AB0471009BBDF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = control_systemUT;
+			productName = control_systemUT;
+			productReference = D071C56323AB0471009BBDF1 /* control_systemUT.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -129,6 +195,9 @@
 				ORGANIZATIONNAME = "Li-Cheng Hsu";
 				TargetAttributes = {
 					D071C52623A8B456009BBDF1 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					D071C56223AB0471009BBDF1 = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
@@ -147,17 +216,39 @@
 			projectRoot = "";
 			targets = (
 				D071C52623A8B456009BBDF1 /* control_system */,
+				D071C56223AB0471009BBDF1 /* control_systemUT */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D071C56123AB0471009BBDF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D071C52323A8B456009BBDF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D071C52B23A8B456009BBDF1 /* main.cpp in Sources */,
+				D071C57F23AC8ED7009BBDF1 /* main.cpp in Sources */,
 				D071C53323A8BB66009BBDF1 /* saturation.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D071C55F23AB0471009BBDF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D075EC2823ACB04F002167A3 /* saturation.cpp in Sources */,
+				D071C57923AC73CB009BBDF1 /* GoogleTests.mm in Sources */,
+				D071C56623AB0471009BBDF1 /* control_systemUT.m in Sources */,
+				D071C57323AC72CD009BBDF1 /* saturation_test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +305,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Users/lichhsu/Documents/GitHub/googletest/googletest/include;
+				LIBRARY_SEARCH_PATHS = /Users/lichhsu/Documents/GitHub/googletest/googletest/build/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -266,6 +359,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Users/lichhsu/Documents/GitHub/googletest/googletest/include;
+				LIBRARY_SEARCH_PATHS = /Users/lichhsu/Documents/GitHub/googletest/googletest/build/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -289,6 +384,38 @@
 			};
 			name = Release;
 		};
+		D071C56923AB0471009BBDF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = control_systemUT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "gordon.hsu.control-systemUT";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D071C56A23AB0471009BBDF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = control_systemUT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "gordon.hsu.control-systemUT";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -306,6 +433,15 @@
 			buildConfigurations = (
 				D071C52F23A8B456009BBDF1 /* Debug */,
 				D071C53023A8B456009BBDF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D071C56823AB0471009BBDF1 /* Build configuration list for PBXNativeTarget "control_systemUT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D071C56923AB0471009BBDF1 /* Debug */,
+				D071C56A23AB0471009BBDF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

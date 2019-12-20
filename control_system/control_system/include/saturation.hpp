@@ -23,10 +23,13 @@ public:
         bool isValid;
         
         output();
+        ~output();
     };
     
-    output data;
+    output* data;
     
+    saturation();
+    ~saturation();
     void getInputArray(std::vector<double>& array);
     void sat(double lb, double ub);
     void printInputArray();
