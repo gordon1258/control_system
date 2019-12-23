@@ -12,12 +12,6 @@
 
 
 int main(int argc, const char * argv[]) {
-     
-    saturation* test_sat;
-    
-    test_sat = new saturation;
-    
-    std::cout << test_sat->data->isValid << std::endl;
     
     // Google test
     //testing::InitGoogleTest(&argc, argv);

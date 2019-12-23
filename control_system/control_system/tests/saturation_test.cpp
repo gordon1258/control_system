@@ -13,7 +13,6 @@
 class SaturationTest : public :: testing::Test
 {
 public:
-    //saturation::output* data;
     saturation* data;
     
     void SetUp() override
@@ -26,22 +25,38 @@ public:
         delete data;
     }
     
+    
 };
 
 
 TEST_F(SaturationTest, isValidStart)
 {
-    EXPECT_EQ(false, data->data->isValid);
+    // Assert
+    EXPECT_EQ(data->data->isValid, false);
 }
 
-TEST_F(SaturationTest, saturationAlgTest)
+TEST_F(SaturationTest, outputArrayStart)
 {
+    // Arrange
+    std::vector<double> expOutputArray;
+    
+    // Assert
+    EXPECT_EQ(data->getOutputArray(), expOutputArray);
+}
+
+TEST_F(SaturationTest, saturationAlgTest_Boundary)
+{
+    // Arrange
     std:: vector<double> input = {-0.5, 5, 1000, 4, -2, 3, 4, -500};
     double lb = -10, ub = 10;
+    std:: vector<double> v_lb (input.size(), lb);
+    std:: vector<double> v_ub (input.size(), ub);
 
-    data->getInputArray(input);
+    // Act
+    data->setInputArray(input);
     data->sat(lb, ub);
 
-    std:: vector<double> expectedOutput = {-0.5, 5, 10, 4, -2, 3, 4, -10};
-    EXPECT_EQ(expectedOutput, data->data->outputArray);
+    // Assert
+    EXPECT_GE(data->getOutputArray(), v_lb);
+    EXPECT_LE(data->getOutputArray(), v_ub);
 }

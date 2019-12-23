@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D071C53323A8BB66009BBDF1 /* saturation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D071C53123A8BB66009BBDF1 /* saturation.cpp */; };
-		D071C56623AB0471009BBDF1 /* control_systemUT.m in Sources */ = {isa = PBXBuildFile; fileRef = D071C56523AB0471009BBDF1 /* control_systemUT.m */; };
 		D071C56F23AC6FF3009BBDF1 /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D071C56E23AC6FC6009BBDF1 /* libgtest_main.a */; };
 		D071C57023AC6FF3009BBDF1 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D071C56D23AC6FC6009BBDF1 /* libgtest.a */; };
 		D071C57323AC72CD009BBDF1 /* saturation_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D071C55123AAD99C009BBDF1 /* saturation_test.cpp */; };
@@ -17,6 +16,9 @@
 		D071C57923AC73CB009BBDF1 /* GoogleTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = D071C57823AC73CB009BBDF1 /* GoogleTests.mm */; };
 		D071C57F23AC8ED7009BBDF1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D071C52A23A8B456009BBDF1 /* main.cpp */; };
 		D075EC2823ACB04F002167A3 /* saturation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D071C53123A8BB66009BBDF1 /* saturation.cpp */; };
+		D075EC2B23B0123C002167A3 /* interpolation_1d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D075EC2923B0123C002167A3 /* interpolation_1d.cpp */; };
+		D075EC2D23B01262002167A3 /* interpolation_1d_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D075EC2C23B01262002167A3 /* interpolation_1d_test.cpp */; };
+		D075EC2E23B012B4002167A3 /* interpolation_1d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D075EC2923B0123C002167A3 /* interpolation_1d.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,9 @@
 		D071C56D23AC6FC6009BBDF1 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../googletest/googletest/build/lib/libgtest.a; sourceTree = "<group>"; };
 		D071C56E23AC6FC6009BBDF1 /* libgtest_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest_main.a; path = ../../googletest/googletest/build/lib/libgtest_main.a; sourceTree = "<group>"; };
 		D071C57823AC73CB009BBDF1 /* GoogleTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GoogleTests.mm; sourceTree = "<group>"; };
+		D075EC2923B0123C002167A3 /* interpolation_1d.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = interpolation_1d.cpp; sourceTree = "<group>"; };
+		D075EC2A23B0123C002167A3 /* interpolation_1d.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = interpolation_1d.hpp; sourceTree = "<group>"; };
+		D075EC2C23B01262002167A3 /* interpolation_1d_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = interpolation_1d_test.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				D071C53223A8BB66009BBDF1 /* saturation.hpp */,
+				D075EC2A23B0123C002167A3 /* interpolation_1d.hpp */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -108,8 +114,9 @@
 		D071C53523AA115A009BBDF1 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				D071C53123A8BB66009BBDF1 /* saturation.cpp */,
 				D071C52A23A8B456009BBDF1 /* main.cpp */,
+				D071C53123A8BB66009BBDF1 /* saturation.cpp */,
+				D075EC2923B0123C002167A3 /* interpolation_1d.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				D071C55123AAD99C009BBDF1 /* saturation_test.cpp */,
+				D075EC2C23B01262002167A3 /* interpolation_1d_test.cpp */,
 			);
 			path = tests;
 			sourceTree = "<group>";
@@ -238,6 +246,7 @@
 			files = (
 				D071C57F23AC8ED7009BBDF1 /* main.cpp in Sources */,
 				D071C53323A8BB66009BBDF1 /* saturation.cpp in Sources */,
+				D075EC2B23B0123C002167A3 /* interpolation_1d.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,9 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D075EC2E23B012B4002167A3 /* interpolation_1d.cpp in Sources */,
 				D075EC2823ACB04F002167A3 /* saturation.cpp in Sources */,
+				D075EC2D23B01262002167A3 /* interpolation_1d_test.cpp in Sources */,
 				D071C57923AC73CB009BBDF1 /* GoogleTests.mm in Sources */,
-				D071C56623AB0471009BBDF1 /* control_systemUT.m in Sources */,
 				D071C57323AC72CD009BBDF1 /* saturation_test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

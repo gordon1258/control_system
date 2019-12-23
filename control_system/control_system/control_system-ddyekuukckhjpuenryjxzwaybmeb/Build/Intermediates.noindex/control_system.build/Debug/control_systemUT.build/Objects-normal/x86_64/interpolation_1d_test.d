@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/lichhsu/Documents/GitHub/control_system/control_system/control_system/tests/interpolation_1d_test.cpp \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/gtest.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/internal/gtest-internal.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/internal/gtest-port.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/internal/custom/gtest-port.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/internal/gtest-port-arch.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/gtest-message.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/internal/gtest-filepath.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/internal/gtest-string.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/internal/gtest-type-util.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/gtest-death-test.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/internal/gtest-death-test-internal.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/gtest-matchers.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/gtest-printers.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/internal/custom/gtest-printers.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/gtest-param-test.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/internal/gtest-param-util.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/gtest-test-part.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/gtest_prod.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/gtest-typed-test.h \
+  /Users/lichhsu/Documents/GitHub/googletest/googletest/include/gtest/gtest_pred_impl.h \
+  /Users/lichhsu/Documents/GitHub/control_system/control_system/control_system/include/interpolation_1d.hpp

@@ -33,7 +33,7 @@ saturation::~saturation()
     delete data;
 }
 
-void saturation::getInputArray(std::vector<double>& array)
+void saturation::setInputArray(std::vector<double>& array)
 {
     if(checkValid(array))
         for(int i = 0; i < array.size(); ++i)
@@ -79,6 +79,16 @@ void saturation::printOutputArray()
         for(int i = 0; i < data->outputArray.size(); ++i)
             std::cout << data->outputArray[i] << std::endl;
     }
+}
+
+std::vector<double> saturation::getOutputArray() const
+{
+    return data->outputArray;
+}
+
+bool saturation::getOutputValid() const
+{
+    return data->isValid;
 }
 
 bool saturation::checkValid(std::vector<double> array)

@@ -30,7 +30,9 @@ public:
     
     saturation();
     ~saturation();
-    void getInputArray(std::vector<double>& array);
+    void setInputArray(std::vector<double>& array);
+    std::vector<double> getOutputArray() const;
+    bool getOutputValid() const;
     void sat(double lb, double ub);
     void printInputArray();
     void printOutputArray();
