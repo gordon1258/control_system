@@ -45,7 +45,7 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
-      useCustomWorkingDirectory = "YES"
+      useCustomWorkingDirectory = "NO"
       customWorkingDirectory = "/Users/lichhsu/Documents/GitHub/control_system/control_system/control_system"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
