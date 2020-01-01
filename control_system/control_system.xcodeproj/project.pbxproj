@@ -19,6 +19,9 @@
 		D075EC2B23B0123C002167A3 /* interpolation_1d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D075EC2923B0123C002167A3 /* interpolation_1d.cpp */; };
 		D075EC2D23B01262002167A3 /* interpolation_1d_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D075EC2C23B01262002167A3 /* interpolation_1d_test.cpp */; };
 		D075EC2E23B012B4002167A3 /* interpolation_1d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D075EC2923B0123C002167A3 /* interpolation_1d.cpp */; };
+		D075EC3123BA9E5C002167A3 /* pid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D075EC2F23BA9E5C002167A3 /* pid.cpp */; };
+		D075EC3223BA9E5D002167A3 /* pid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D075EC2F23BA9E5C002167A3 /* pid.cpp */; };
+		D09E00DE23BBC7A0006BFDB0 /* pid_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00DD23BBC7A0006BFDB0 /* pid_test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +51,9 @@
 		D075EC2923B0123C002167A3 /* interpolation_1d.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = interpolation_1d.cpp; sourceTree = "<group>"; };
 		D075EC2A23B0123C002167A3 /* interpolation_1d.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = interpolation_1d.hpp; sourceTree = "<group>"; };
 		D075EC2C23B01262002167A3 /* interpolation_1d_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = interpolation_1d_test.cpp; sourceTree = "<group>"; };
+		D075EC2F23BA9E5C002167A3 /* pid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pid.cpp; sourceTree = "<group>"; };
+		D075EC3023BA9E5C002167A3 /* pid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = pid.hpp; sourceTree = "<group>"; };
+		D09E00DD23BBC7A0006BFDB0 /* pid_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pid_test.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 			children = (
 				D071C53223A8BB66009BBDF1 /* saturation.hpp */,
 				D075EC2A23B0123C002167A3 /* interpolation_1d.hpp */,
+				D075EC3023BA9E5C002167A3 /* pid.hpp */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -117,6 +124,7 @@
 				D071C52A23A8B456009BBDF1 /* main.cpp */,
 				D071C53123A8BB66009BBDF1 /* saturation.cpp */,
 				D075EC2923B0123C002167A3 /* interpolation_1d.cpp */,
+				D075EC2F23BA9E5C002167A3 /* pid.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -126,6 +134,7 @@
 			children = (
 				D071C55123AAD99C009BBDF1 /* saturation_test.cpp */,
 				D075EC2C23B01262002167A3 /* interpolation_1d_test.cpp */,
+				D09E00DD23BBC7A0006BFDB0 /* pid_test.cpp */,
 			);
 			path = tests;
 			sourceTree = "<group>";
@@ -245,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D071C57F23AC8ED7009BBDF1 /* main.cpp in Sources */,
+				D075EC3123BA9E5C002167A3 /* pid.cpp in Sources */,
 				D071C53323A8BB66009BBDF1 /* saturation.cpp in Sources */,
 				D075EC2B23B0123C002167A3 /* interpolation_1d.cpp in Sources */,
 			);
@@ -255,8 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D075EC2E23B012B4002167A3 /* interpolation_1d.cpp in Sources */,
+				D09E00DE23BBC7A0006BFDB0 /* pid_test.cpp in Sources */,
 				D075EC2823ACB04F002167A3 /* saturation.cpp in Sources */,
 				D075EC2D23B01262002167A3 /* interpolation_1d_test.cpp in Sources */,
+				D075EC3223BA9E5D002167A3 /* pid.cpp in Sources */,
 				D071C57923AC73CB009BBDF1 /* GoogleTests.mm in Sources */,
 				D071C57323AC72CD009BBDF1 /* saturation_test.cpp in Sources */,
 			);
