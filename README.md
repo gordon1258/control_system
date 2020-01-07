@@ -1,5 +1,7 @@
 # control_system
-The control_system project focuses on the generic control system alogrithm, implementation, and the corresponding unit tests (google test) in C++.
+- The control_system project focuses on the generic control system alogrithm, implementation, and the corresponding unit tests (google test) in C++.
+- The project scope also includes the simulation modeling mainly to verify the algorithm of the controllers.
+- Gnuplot is used for data visualization of the results.
 
 ## Outline
 A. Algorithm and Implementation
@@ -34,3 +36,6 @@ A. Algorithm and Implementation
 	- [x] Euler's method
 
 B. Unit testing using Googel Test
+
+C. System integration
+	- [x] Mass-spring-damper system with PID controller
