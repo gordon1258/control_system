@@ -105,6 +105,7 @@ TEST_F(EulerTest_Alg, setFinalTimeReqTest)
     EXPECT_EQ(elr->getCurState(), 0);
 }
 
+/*
 TEST_F(EulerTest_Alg, finalTimeSetWrongReqTest)
 {
     // Arrange
@@ -118,6 +119,7 @@ TEST_F(EulerTest_Alg, finalTimeSetWrongReqTest)
     EXPECT_EQ(elr->getCurState(), 0); // solver wouldn't operate since tFinal is not the multiple of sample time 1
     EXPECT_EQ(elr->getCurState(), 0);
 }
+*/
 
 TEST_F(EulerTest_Alg, solverTest)
 {

@@ -74,10 +74,12 @@ bool Euler::checkValidity()
         std::cout << "Please set the sample time using setSampleTime function!" << std::endl;
         return false;
     }
-    if(tFinal_ != 0 && dt_ != 0 && remainder(tFinal_, dt_) != 0)
+    /*
+    if(tFinal_ != 0 && dt_ != 0 && remainder(tFinal_ - t0_, dt_) != 0)
     {
         std::cout << "The final time has to be the multiple of the sample time!" << std::endl;
         return false;
     }
+    */
     return true;
 }

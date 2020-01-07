@@ -31,7 +31,7 @@ public:
     //double getFinalTime();
     double getCurState();
     
-private:
+protected:
     double t0_; // Initial time in sec
     double dt_; // Sample time (step size) in sec
     double t_; // Current time in sec

@@ -28,6 +28,9 @@
 		D09E00ED23C3B3E1006BFDB0 /* Euler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00EB23C3B3E1006BFDB0 /* Euler.cpp */; };
 		D09E00EE23C3B3E1006BFDB0 /* Euler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00EB23C3B3E1006BFDB0 /* Euler.cpp */; };
 		D09E00F023C3C47D006BFDB0 /* Euler_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00EF23C3C47D006BFDB0 /* Euler_test.cpp */; };
+		D09E00F323C4167F006BFDB0 /* mass_spring_damper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00F123C4167E006BFDB0 /* mass_spring_damper.cpp */; };
+		D09E00F423C4167F006BFDB0 /* mass_spring_damper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00F123C4167E006BFDB0 /* mass_spring_damper.cpp */; };
+		D09E00F623C45A64006BFDB0 /* mass_spring_damper_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00F523C45A64006BFDB0 /* mass_spring_damper_test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +71,9 @@
 		D09E00EB23C3B3E1006BFDB0 /* Euler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Euler.cpp; sourceTree = "<group>"; };
 		D09E00EC23C3B3E1006BFDB0 /* Euler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Euler.hpp; sourceTree = "<group>"; };
 		D09E00EF23C3C47D006BFDB0 /* Euler_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Euler_test.cpp; sourceTree = "<group>"; };
+		D09E00F123C4167E006BFDB0 /* mass_spring_damper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mass_spring_damper.cpp; sourceTree = "<group>"; };
+		D09E00F223C4167E006BFDB0 /* mass_spring_damper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mass_spring_damper.hpp; sourceTree = "<group>"; };
+		D09E00F523C45A64006BFDB0 /* mass_spring_damper_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mass_spring_damper_test.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,7 @@
 				D075EC2A23B0123C002167A3 /* interpolation_1d.hpp */,
 				D075EC3023BA9E5C002167A3 /* pid.hpp */,
 				D09E00EC23C3B3E1006BFDB0 /* Euler.hpp */,
+				D09E00F223C4167E006BFDB0 /* mass_spring_damper.hpp */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -144,6 +151,7 @@
 				D075EC2923B0123C002167A3 /* interpolation_1d.cpp */,
 				D075EC2F23BA9E5C002167A3 /* pid.cpp */,
 				D09E00EB23C3B3E1006BFDB0 /* Euler.cpp */,
+				D09E00F123C4167E006BFDB0 /* mass_spring_damper.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -155,6 +163,7 @@
 				D075EC2C23B01262002167A3 /* interpolation_1d_test.cpp */,
 				D09E00DD23BBC7A0006BFDB0 /* pid_test.cpp */,
 				D09E00EF23C3C47D006BFDB0 /* Euler_test.cpp */,
+				D09E00F523C45A64006BFDB0 /* mass_spring_damper_test.cpp */,
 			);
 			path = tests;
 			sourceTree = "<group>";
@@ -279,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D071C57F23AC8ED7009BBDF1 /* main.cpp in Sources */,
+				D09E00F323C4167F006BFDB0 /* mass_spring_damper.cpp in Sources */,
 				D09E00ED23C3B3E1006BFDB0 /* Euler.cpp in Sources */,
 				D075EC3123BA9E5C002167A3 /* pid.cpp in Sources */,
 				D071C53323A8BB66009BBDF1 /* saturation.cpp in Sources */,
@@ -294,11 +304,13 @@
 				D09E00DE23BBC7A0006BFDB0 /* pid_test.cpp in Sources */,
 				D075EC2823ACB04F002167A3 /* saturation.cpp in Sources */,
 				D09E00F023C3C47D006BFDB0 /* Euler_test.cpp in Sources */,
+				D09E00F623C45A64006BFDB0 /* mass_spring_damper_test.cpp in Sources */,
 				D075EC2D23B01262002167A3 /* interpolation_1d_test.cpp in Sources */,
 				D075EC3223BA9E5D002167A3 /* pid.cpp in Sources */,
 				D071C57923AC73CB009BBDF1 /* GoogleTests.mm in Sources */,
 				D071C57323AC72CD009BBDF1 /* saturation_test.cpp in Sources */,
 				D09E00EE23C3B3E1006BFDB0 /* Euler.cpp in Sources */,
+				D09E00F423C4167F006BFDB0 /* mass_spring_damper.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

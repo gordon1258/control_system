@@ -7,90 +7,71 @@
 //
 
 #include <iostream>
-#include "saturation.hpp"
 #include "gtest/gtest.h"
+
 #include "gnuplot-iostream.h"
-
-
 #include <map>
 #include <vector>
-#include <cmath>
 #include <boost/tuple/tuple.hpp>
+
 #include <Eigen/Dense>
+
+#include "mass_spring_damper.hpp"
 
 int main(int argc, const char * argv[]) {
     
-    /*
-    // Test gnuplot
-    //Gnuplot gp;
+    // Mass-spring-damper system
+    sysMSD* sys;
+    sys = new sysMSD;
     
-    //gp << "plot cos(x))\n";
-    Gnuplot gp;
-
-    // Gnuplot vectors (i.e. arrows) require four columns: (x,y,dx,dy)
-
-    // You can also use a separate container for each column, like so:
-    int n = 1000;
-    std::vector<std::pair<double,double>> X_t;
-    std::vector<std::pair<double,double>> Y_t;
+    // Parameters
+    double t0 = 0;
+    double dt = 0.1; // sec
+    double tFinal = 2.5; // sec
+    double x_init = 0; // m
+    double v_init = 0; // m/s
     
-    std::vector<double> t;
-    std::vector<double> x(n, 500);
-    std::vector<double> y;
-
-    // Make the data
-    double dt = 0.01;
+    double m = 1; // kg
+    double b = 10; // N s/m
+    double k = 20; // N/m
     
-    for(int i = 0; i < n; ++i)
+    std::vector<std::pair<double,double>> x_t;
+    std::vector<std::pair<double,double>> v_t;
+    std::vector<std::pair<double,double>> y_t;
+    
+    // Init
+    sys->setInitTime(t0);
+    sys->setSampleTime(dt);
+    sys->setInitState(x_init, v_init);
+    
+    sys->setMass(m);
+    sys->setDamper(b);
+    sys->setSpring(k);
+    
+    x_t.push_back(std::make_pair(sys->getCurTime(), sys->getState().x1));
+    v_t.push_back(std::make_pair(sys->getCurTime(), sys->getState().x2));
+    y_t.push_back(std::make_pair(sys->getCurTime(), sys->getY()));
+    
+    // Step reponse
+    double F = 1; // N
+    
+    while(sys->getCurTime() < tFinal)
     {
-        t.push_back(i * dt);
-        y.push_back(i);
-        X_t.push_back(std::make_pair(t[i], x[i]));
-        Y_t.push_back(std::make_pair(t[i], y[i]));
+        sys->dynSys(F);
+        
+        // Push the states and output for plotting
+        x_t.push_back(std::make_pair(sys->getCurTime(), sys->getState().x1));
+        v_t.push_back(std::make_pair(sys->getCurTime(), sys->getState().x2));
+        y_t.push_back(std::make_pair(sys->getCurTime(), sys->getY()));
     }
     
+    // Plot : gnuplot
+    Gnuplot gp;
     
-    
-    // Don't forget to put "\n"  or std::endl at the end of each line!
-    //gp << "set xrange [-2:2]\nset yrange [-2:2]\n";
-    // '-' means read from stdin.  The send1d() function sends data to
-    // gnuplot's stdin.
-
-    // Plot 1
-    gp << "set xrange [0:10]\n";
-    gp << "plot '-' with lines title 'testing restuls', '-' with lines title 'testing results 2'"<<std::endl;
-    gp.send1d(boost::make_tuple(t,x));
-    gp.send1d(boost::make_tuple(t,y));
-    
-    // Plot 2
-    gp << "plot" << gp.file1d(X_t) << "with lines title 'X_t',"
-    << gp.file1d(Y_t) << "with lines title 'Y_t'" << std::endl;
-    */
-    
-    // Test eigen: Matrices and vectors
-    //Eigen::MatrixXd  m = Eigen::MatrixXd::Random(3, 3);
-    //m = (m + Eigen::MatrixXd::Constant(3, 3, 1.2)) * 50;
-    Eigen::VectorXd v(2);
-    v(0) = 1;
-    v(1) = 2;
-    
-    std::cout << "v =\n" << v << std::endl;
-    
-    Eigen::MatrixXd m(2,2);
-    Eigen::Matrix2d m2;
-    /*
-    m(0,0) = 1;
-    m(1,0) = 0;
-    m(0,1) = 0;
-    m(1,1) = 1;
-    */
-    m << 1, 0,
-         0, 1;
-    m2 << 1, 2,
-          3, 4;
-    
-    std::cout << "m2 * m =\n" << m2 * m<< std::endl;
-    
+    //gp << "set xrange [0:10]\n";
+    gp << "plot '-' with lines title 'position', '-' with lines title 'velocity'"<<std::endl;
+    gp.send1d(x_t);
+    gp.send1d(v_t);
     
     return 0;
 }
