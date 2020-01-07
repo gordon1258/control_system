@@ -22,6 +22,12 @@
 		D075EC3123BA9E5C002167A3 /* pid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D075EC2F23BA9E5C002167A3 /* pid.cpp */; };
 		D075EC3223BA9E5D002167A3 /* pid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D075EC2F23BA9E5C002167A3 /* pid.cpp */; };
 		D09E00DE23BBC7A0006BFDB0 /* pid_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00DD23BBC7A0006BFDB0 /* pid_test.cpp */; };
+		D09E00E223BEB5FB006BFDB0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09E00E123BEB5FB006BFDB0 /* OpenGL.framework */; };
+		D09E00E423BEBDA1006BFDB0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09E00E323BEBDA1006BFDB0 /* Cocoa.framework */; };
+		D09E00E623BEBDC0006BFDB0 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09E00E523BEBDC0006BFDB0 /* GLUT.framework */; };
+		D09E00ED23C3B3E1006BFDB0 /* Euler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00EB23C3B3E1006BFDB0 /* Euler.cpp */; };
+		D09E00EE23C3B3E1006BFDB0 /* Euler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00EB23C3B3E1006BFDB0 /* Euler.cpp */; };
+		D09E00F023C3C47D006BFDB0 /* Euler_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00EF23C3C47D006BFDB0 /* Euler_test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +60,14 @@
 		D075EC2F23BA9E5C002167A3 /* pid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pid.cpp; sourceTree = "<group>"; };
 		D075EC3023BA9E5C002167A3 /* pid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = pid.hpp; sourceTree = "<group>"; };
 		D09E00DD23BBC7A0006BFDB0 /* pid_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pid_test.cpp; sourceTree = "<group>"; };
+		D09E00E123BEB5FB006BFDB0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		D09E00E323BEBDA1006BFDB0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D09E00E523BEBDC0006BFDB0 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		D09E00E723BEBE84006BFDB0 /* libbgi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbgi.a; path = ../../WinBGIm_Library6_0_Nov2005/lib/libbgi.a; sourceTree = "<group>"; };
+		D09E00E923BEBFA2006BFDB0 /* libkoolplot.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkoolplot.a; path = ../../WinBGIm_Library6_0_Nov2005/lib/libkoolplot.a; sourceTree = "<group>"; };
+		D09E00EB23C3B3E1006BFDB0 /* Euler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Euler.cpp; sourceTree = "<group>"; };
+		D09E00EC23C3B3E1006BFDB0 /* Euler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Euler.hpp; sourceTree = "<group>"; };
+		D09E00EF23C3C47D006BFDB0 /* Euler_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Euler_test.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +75,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09E00E623BEBDC0006BFDB0 /* GLUT.framework in Frameworks */,
+				D09E00E423BEBDA1006BFDB0 /* Cocoa.framework in Frameworks */,
+				D09E00E223BEB5FB006BFDB0 /* OpenGL.framework in Frameworks */,
 				D071C56F23AC6FF3009BBDF1 /* libgtest_main.a in Frameworks */,
 				D071C57023AC6FF3009BBDF1 /* libgtest.a in Frameworks */,
 			);
@@ -114,6 +131,7 @@
 				D071C53223A8BB66009BBDF1 /* saturation.hpp */,
 				D075EC2A23B0123C002167A3 /* interpolation_1d.hpp */,
 				D075EC3023BA9E5C002167A3 /* pid.hpp */,
+				D09E00EC23C3B3E1006BFDB0 /* Euler.hpp */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -125,6 +143,7 @@
 				D071C53123A8BB66009BBDF1 /* saturation.cpp */,
 				D075EC2923B0123C002167A3 /* interpolation_1d.cpp */,
 				D075EC2F23BA9E5C002167A3 /* pid.cpp */,
+				D09E00EB23C3B3E1006BFDB0 /* Euler.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -135,6 +154,7 @@
 				D071C55123AAD99C009BBDF1 /* saturation_test.cpp */,
 				D075EC2C23B01262002167A3 /* interpolation_1d_test.cpp */,
 				D09E00DD23BBC7A0006BFDB0 /* pid_test.cpp */,
+				D09E00EF23C3C47D006BFDB0 /* Euler_test.cpp */,
 			);
 			path = tests;
 			sourceTree = "<group>";
@@ -149,6 +169,11 @@
 		D071C53823AAAF30009BBDF1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D09E00E923BEBFA2006BFDB0 /* libkoolplot.a */,
+				D09E00E723BEBE84006BFDB0 /* libbgi.a */,
+				D09E00E523BEBDC0006BFDB0 /* GLUT.framework */,
+				D09E00E323BEBDA1006BFDB0 /* Cocoa.framework */,
+				D09E00E123BEB5FB006BFDB0 /* OpenGL.framework */,
 				D071C56E23AC6FC6009BBDF1 /* libgtest_main.a */,
 				D071C56D23AC6FC6009BBDF1 /* libgtest.a */,
 			);
@@ -254,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D071C57F23AC8ED7009BBDF1 /* main.cpp in Sources */,
+				D09E00ED23C3B3E1006BFDB0 /* Euler.cpp in Sources */,
 				D075EC3123BA9E5C002167A3 /* pid.cpp in Sources */,
 				D071C53323A8BB66009BBDF1 /* saturation.cpp in Sources */,
 				D075EC2B23B0123C002167A3 /* interpolation_1d.cpp in Sources */,
@@ -267,10 +293,12 @@
 				D075EC2E23B012B4002167A3 /* interpolation_1d.cpp in Sources */,
 				D09E00DE23BBC7A0006BFDB0 /* pid_test.cpp in Sources */,
 				D075EC2823ACB04F002167A3 /* saturation.cpp in Sources */,
+				D09E00F023C3C47D006BFDB0 /* Euler_test.cpp in Sources */,
 				D075EC2D23B01262002167A3 /* interpolation_1d_test.cpp in Sources */,
 				D075EC3223BA9E5D002167A3 /* pid.cpp in Sources */,
 				D071C57923AC73CB009BBDF1 /* GoogleTests.mm in Sources */,
 				D071C57323AC72CD009BBDF1 /* saturation_test.cpp in Sources */,
+				D09E00EE23C3B3E1006BFDB0 /* Euler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,12 +355,28 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /Users/lichhsu/Documents/GitHub/googletest/googletest/include;
-				LIBRARY_SEARCH_PATHS = /Users/lichhsu/Documents/GitHub/googletest/googletest/build/lib;
+				HEADER_SEARCH_PATHS = (
+					/Users/lichhsu/Documents/GitHub/googletest/googletest/include,
+					/usr/local/Cellar/boost/1.72.0/include/,
+					"/Users/lichhsu/Documents/GitHub/gnuplot-iostream",
+					/usr/local/Cellar/eigen/3.3.7/include/eigen3,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/Users/lichhsu/Documents/GitHub/googletest/googletest/build/lib,
+					"/Users/lichhsu/Documents/GitHub/gnuplot-iostream",
+					/usr/local/Cellar/boost/1.72.0/lib/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lboost_filesystem",
+					"-lboost_system",
+					"-lboost_iostreams",
+					"-I/usr/local/Cellar/eigen/3.3.7",
+				);
+				OTHER_LIBTOOLFLAGS = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -381,11 +425,27 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /Users/lichhsu/Documents/GitHub/googletest/googletest/include;
-				LIBRARY_SEARCH_PATHS = /Users/lichhsu/Documents/GitHub/googletest/googletest/build/lib;
+				HEADER_SEARCH_PATHS = (
+					/Users/lichhsu/Documents/GitHub/googletest/googletest/include,
+					/usr/local/Cellar/boost/1.72.0/include/,
+					"/Users/lichhsu/Documents/GitHub/gnuplot-iostream",
+					/usr/local/Cellar/eigen/3.3.7/include/eigen3,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/Users/lichhsu/Documents/GitHub/googletest/googletest/build/lib,
+					"/Users/lichhsu/Documents/GitHub/gnuplot-iostream",
+					/usr/local/Cellar/boost/1.72.0/lib/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-lboost_filesystem",
+					"-lboost_system",
+					"-lboost_iostreams",
+					"-I/usr/local/Cellar/eigen/3.3.7",
+				);
+				OTHER_LIBTOOLFLAGS = "";
 				SDKROOT = macosx;
 			};
 			name = Release;

@@ -26,6 +26,7 @@ pid::pid(double integral_IC, double dt)
 }
 
 pid::~pid() {}
+
 void pid::setDt(double dt)
 {
     if(dt <= 0)

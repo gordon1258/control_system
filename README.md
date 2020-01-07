@@ -27,6 +27,8 @@ A. Algorithm and Implementation
 3. Modeling
 	- [ ] Transfer function
 	- [ ] State space
-	- [ ] System identification 
+	- [ ] System identification
+4. Solver
+	- [x] Euler's method
 
 B. Unit testing using Googel Test

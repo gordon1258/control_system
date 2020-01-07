@@ -16,12 +16,12 @@ class interpolation_1dTest_General : public :: testing::Test
 public:
     interpolation_1d* data;
     
-    void SetUp()
+    void SetUp() override
     {
         data = new interpolation_1d;
     }
     
-    void TearDown()
+    void TearDown() override
     {
         delete data;
     }
@@ -34,14 +34,14 @@ public:
     std::vector<double> X = {1,2,3,4,5};
     std::vector<double> Y = {3,2,5,2,4};
     
-    void SetUp()
+    void SetUp() override
     {
         data = new interpolation_1d;
         data->setX(X);
         data->setY(Y);
     }
     
-    void TearDown()
+    void TearDown() override
     {
         delete data;
     }

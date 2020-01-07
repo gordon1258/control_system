@@ -11,7 +11,7 @@
 #include "gtest/gtest.h"
 #include "pid.hpp"
 
-class pidTest_General : public :: testing::Test
+class pidTest_General : public testing::Test
 {
 public:
     pid* pidCtrl;
@@ -26,7 +26,7 @@ public:
     }
 };
 
-class pidTest_Alg : public :: testing::Test
+class pidTest_Alg : public testing::Test
 {
 public:
     double dt = 0.1; // 100 ms
