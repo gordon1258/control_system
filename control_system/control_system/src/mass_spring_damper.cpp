@@ -89,10 +89,9 @@ void sysMSD::dynSys(double F)
     elr1->setInitCond(x.x1, t_);
     elr2->setInitCond(x.x2, t_);
     
-    // Update the current time
-    t_ += dt_;
-    elr1->setFinalTime(t_);
-    elr2->setFinalTime(t_);
+    // Set the final time for the integrator
+    elr1->setFinalTime(t_ + dt_);
+    elr2->setFinalTime(t_ + dt_);
     
     // Mass-spring-damper system dynamics: xDot calculation
     xDot.xDot1 = x.x2;
@@ -108,5 +107,8 @@ void sysMSD::dynSys(double F)
     
     // Update the new output
     y_ = x.x1;
+    
+    // Update the new time
+    t_ = elr1->getCurTime();
 }
 

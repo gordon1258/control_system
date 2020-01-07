@@ -56,7 +56,7 @@ TEST_F(pidTest_General, InitializationTest)
     EXPECT_EQ(pidCtrl->getGains().kd, 0);
 }
 
-TEST_F(pidTest_General,SampleTimeTest_Normal)
+TEST_F(pidTest_General,SampleTimeSettableTest_Normal)
 {
     // Positive sample time
     // Arrange
@@ -69,7 +69,7 @@ TEST_F(pidTest_General,SampleTimeTest_Normal)
     EXPECT_EQ(pidCtrl->getDt(), dt);
 }
 
-TEST_F(pidTest_General,SampleTimeTest_nonPositive)
+TEST_F(pidTest_General,SampleTimeSettableTest_nonPositive)
 {
     // Arrange
     double dt = -1;
@@ -79,6 +79,21 @@ TEST_F(pidTest_General,SampleTimeTest_nonPositive)
     
     // Assert
     EXPECT_EQ(pidCtrl->getDt(), 0);
+}
+
+TEST_F(pidTest_General,IntegInitCondSettableTest_nonPositive)
+{
+    // Arrange
+    double integral_IC = 10;
+    double dt = 1;
+    
+    // Act
+    pidCtrl->setInitCond(integral_IC);
+    pidCtrl->setDt(dt);
+    pidCtrl->pidCalculate(0);
+    
+    // Assert
+    EXPECT_EQ(pidCtrl->getCmdCtrl().cmdCtrl, integral_IC);
 }
 
 TEST_F(pidTest_General, IntegralLimitsTest_Normal)

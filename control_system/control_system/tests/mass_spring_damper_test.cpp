@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 #include "gtest/gtest.h"
+
 #include "mass_spring_damper.hpp"
 
 class sysMSDTest_General : public testing::Test

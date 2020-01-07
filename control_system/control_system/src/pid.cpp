@@ -42,6 +42,9 @@ void pid::setGains(double kp, double ki, double kd)
     gains.kp = kp;
     gains.ki = ki;
     gains.kd = kd;
+    
+    if(gains.ki > 0)
+        integralHold = true;
 }
 void pid::setLimits(double min, double max)
 {
@@ -91,6 +94,7 @@ pid::output pid::pidCalculate(double err)
     double integral = preIntegral;
     if(!integralHold)
     {
+        // Forward Euler
         integral += gains.ki * err * dt_;
         
         // integral term is beyond the limits

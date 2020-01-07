@@ -53,17 +53,17 @@ void Euler::solver(double xDot)
 
 double Euler::getSampleTime()
 {
-    std::cout << "The sample time is " << dt_ << std::endl;
+    //std::cout << "The sample time is " << dt_ << std::endl;
     return dt_;
 }
 double Euler::getCurTime()
 {
-    std::cout << "The current time is " << t_ << std::endl;
+    //std::cout << "The current time is " << t_ << std::endl;
     return t_;
 }
 double Euler::getCurState()
 {
-    std::cout << "The current state is " << x_ << std::endl;
+    //std::cout << "The current state is " << x_ << std::endl;
     return x_;
 }
 

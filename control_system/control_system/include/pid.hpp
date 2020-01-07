@@ -49,6 +49,7 @@ public:
     
     void setDt(double dt);
     void setGains(double kp, double ki, double kd);
+    void setInitCond(double integral_IC) {preIntegral = integral_IC;};
     void setLimits(double min, double max);
     
     output getCmdCtrl();
