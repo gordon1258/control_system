@@ -30,7 +30,8 @@ A. Algorithm and Implementation
 	- [ ] Transfer function
 	- [ ] State space
 		- [x] Mass-spring-damper system
-		- [ ] Vehicle dynamics system
+		- [x] Vehicle kinematic model
+		- [ ] Vehicle dynamic model
 	- [ ] System identification
 4. Solver
 	- [x] Euler's method
@@ -38,4 +39,4 @@ A. Algorithm and Implementation
 B. Unit testing using Googel Test
 
 C. System integration
-	- [x] Mass-spring-damper system with PID controller
+- [x] Mass-spring-damper system with PID controller

@@ -10,27 +10,32 @@
 		D071C53323A8BB66009BBDF1 /* saturation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D071C53123A8BB66009BBDF1 /* saturation.cpp */; };
 		D071C56F23AC6FF3009BBDF1 /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D071C56E23AC6FC6009BBDF1 /* libgtest_main.a */; };
 		D071C57023AC6FF3009BBDF1 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D071C56D23AC6FC6009BBDF1 /* libgtest.a */; };
-		D071C57323AC72CD009BBDF1 /* saturation_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D071C55123AAD99C009BBDF1 /* saturation_test.cpp */; };
 		D071C57423AC7305009BBDF1 /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D071C56E23AC6FC6009BBDF1 /* libgtest_main.a */; };
 		D071C57523AC7305009BBDF1 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D071C56D23AC6FC6009BBDF1 /* libgtest.a */; };
 		D071C57923AC73CB009BBDF1 /* GoogleTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = D071C57823AC73CB009BBDF1 /* GoogleTests.mm */; };
 		D071C57F23AC8ED7009BBDF1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D071C52A23A8B456009BBDF1 /* main.cpp */; };
 		D075EC2823ACB04F002167A3 /* saturation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D071C53123A8BB66009BBDF1 /* saturation.cpp */; };
 		D075EC2B23B0123C002167A3 /* interpolation_1d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D075EC2923B0123C002167A3 /* interpolation_1d.cpp */; };
-		D075EC2D23B01262002167A3 /* interpolation_1d_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D075EC2C23B01262002167A3 /* interpolation_1d_test.cpp */; };
 		D075EC2E23B012B4002167A3 /* interpolation_1d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D075EC2923B0123C002167A3 /* interpolation_1d.cpp */; };
 		D075EC3123BA9E5C002167A3 /* pid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D075EC2F23BA9E5C002167A3 /* pid.cpp */; };
 		D075EC3223BA9E5D002167A3 /* pid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D075EC2F23BA9E5C002167A3 /* pid.cpp */; };
-		D09E00DE23BBC7A0006BFDB0 /* pid_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00DD23BBC7A0006BFDB0 /* pid_test.cpp */; };
 		D09E00E223BEB5FB006BFDB0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09E00E123BEB5FB006BFDB0 /* OpenGL.framework */; };
 		D09E00E423BEBDA1006BFDB0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09E00E323BEBDA1006BFDB0 /* Cocoa.framework */; };
 		D09E00E623BEBDC0006BFDB0 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09E00E523BEBDC0006BFDB0 /* GLUT.framework */; };
 		D09E00ED23C3B3E1006BFDB0 /* Euler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00EB23C3B3E1006BFDB0 /* Euler.cpp */; };
 		D09E00EE23C3B3E1006BFDB0 /* Euler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00EB23C3B3E1006BFDB0 /* Euler.cpp */; };
-		D09E00F023C3C47D006BFDB0 /* Euler_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00EF23C3C47D006BFDB0 /* Euler_test.cpp */; };
 		D09E00F323C4167F006BFDB0 /* mass_spring_damper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00F123C4167E006BFDB0 /* mass_spring_damper.cpp */; };
 		D09E00F423C4167F006BFDB0 /* mass_spring_damper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00F123C4167E006BFDB0 /* mass_spring_damper.cpp */; };
-		D09E00F623C45A64006BFDB0 /* mass_spring_damper_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00F523C45A64006BFDB0 /* mass_spring_damper_test.cpp */; };
+		D0DBC08723E4B8FE00663828 /* veh_model_bikeKinematic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DBC08523E4B8FD00663828 /* veh_model_bikeKinematic.cpp */; };
+		D0DBC08823E4B8FE00663828 /* veh_model_bikeKinematic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DBC08523E4B8FD00663828 /* veh_model_bikeKinematic.cpp */; };
+		D0DBC09623E657CC00663828 /* saturation_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D071C55123AAD99C009BBDF1 /* saturation_test.cpp */; };
+		D0DBC09723E657CC00663828 /* interpolation_1d_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D075EC2C23B01262002167A3 /* interpolation_1d_test.cpp */; };
+		D0DBC09823E657CC00663828 /* pid_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00DD23BBC7A0006BFDB0 /* pid_test.cpp */; };
+		D0DBC09923E657CC00663828 /* Euler_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00EF23C3C47D006BFDB0 /* Euler_test.cpp */; };
+		D0DBC09A23E657CC00663828 /* mass_spring_damper_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D09E00F523C45A64006BFDB0 /* mass_spring_damper_test.cpp */; };
+		D0DBC09B23E657CC00663828 /* veh_model_bikeKinematic_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DBC08923E4E41C00663828 /* veh_model_bikeKinematic_test.cpp */; };
+		D0DBC09C23E657CC00663828 /* SIL_sysMSD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DBC08B23E5068200663828 /* SIL_sysMSD.cpp */; };
+		D0DBC09D23E657CC00663828 /* SIL_bikeKine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DBC08D23E620E300663828 /* SIL_bikeKine.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -74,6 +79,11 @@
 		D09E00F123C4167E006BFDB0 /* mass_spring_damper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mass_spring_damper.cpp; sourceTree = "<group>"; };
 		D09E00F223C4167E006BFDB0 /* mass_spring_damper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mass_spring_damper.hpp; sourceTree = "<group>"; };
 		D09E00F523C45A64006BFDB0 /* mass_spring_damper_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mass_spring_damper_test.cpp; sourceTree = "<group>"; };
+		D0DBC08523E4B8FD00663828 /* veh_model_bikeKinematic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = veh_model_bikeKinematic.cpp; sourceTree = "<group>"; };
+		D0DBC08623E4B8FD00663828 /* veh_model_bikeKinematic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = veh_model_bikeKinematic.hpp; sourceTree = "<group>"; };
+		D0DBC08923E4E41C00663828 /* veh_model_bikeKinematic_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = veh_model_bikeKinematic_test.cpp; sourceTree = "<group>"; };
+		D0DBC08B23E5068200663828 /* SIL_sysMSD.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SIL_sysMSD.cpp; sourceTree = "<group>"; };
+		D0DBC08D23E620E300663828 /* SIL_bikeKine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SIL_bikeKine.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +149,7 @@
 				D075EC3023BA9E5C002167A3 /* pid.hpp */,
 				D09E00EC23C3B3E1006BFDB0 /* Euler.hpp */,
 				D09E00F223C4167E006BFDB0 /* mass_spring_damper.hpp */,
+				D0DBC08623E4B8FD00663828 /* veh_model_bikeKinematic.hpp */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -152,6 +163,7 @@
 				D075EC2F23BA9E5C002167A3 /* pid.cpp */,
 				D09E00EB23C3B3E1006BFDB0 /* Euler.cpp */,
 				D09E00F123C4167E006BFDB0 /* mass_spring_damper.cpp */,
+				D0DBC08523E4B8FD00663828 /* veh_model_bikeKinematic.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -164,6 +176,9 @@
 				D09E00DD23BBC7A0006BFDB0 /* pid_test.cpp */,
 				D09E00EF23C3C47D006BFDB0 /* Euler_test.cpp */,
 				D09E00F523C45A64006BFDB0 /* mass_spring_damper_test.cpp */,
+				D0DBC08923E4E41C00663828 /* veh_model_bikeKinematic_test.cpp */,
+				D0DBC08B23E5068200663828 /* SIL_sysMSD.cpp */,
+				D0DBC08D23E620E300663828 /* SIL_bikeKine.cpp */,
 			);
 			path = tests;
 			sourceTree = "<group>";
@@ -293,6 +308,7 @@
 				D075EC3123BA9E5C002167A3 /* pid.cpp in Sources */,
 				D071C53323A8BB66009BBDF1 /* saturation.cpp in Sources */,
 				D075EC2B23B0123C002167A3 /* interpolation_1d.cpp in Sources */,
+				D0DBC08723E4B8FE00663828 /* veh_model_bikeKinematic.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +317,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D075EC2E23B012B4002167A3 /* interpolation_1d.cpp in Sources */,
-				D09E00DE23BBC7A0006BFDB0 /* pid_test.cpp in Sources */,
 				D075EC2823ACB04F002167A3 /* saturation.cpp in Sources */,
-				D09E00F023C3C47D006BFDB0 /* Euler_test.cpp in Sources */,
-				D09E00F623C45A64006BFDB0 /* mass_spring_damper_test.cpp in Sources */,
-				D075EC2D23B01262002167A3 /* interpolation_1d_test.cpp in Sources */,
+				D0DBC08823E4B8FE00663828 /* veh_model_bikeKinematic.cpp in Sources */,
+				D0DBC09823E657CC00663828 /* pid_test.cpp in Sources */,
 				D075EC3223BA9E5D002167A3 /* pid.cpp in Sources */,
+				D0DBC09A23E657CC00663828 /* mass_spring_damper_test.cpp in Sources */,
+				D0DBC09923E657CC00663828 /* Euler_test.cpp in Sources */,
+				D0DBC09C23E657CC00663828 /* SIL_sysMSD.cpp in Sources */,
 				D071C57923AC73CB009BBDF1 /* GoogleTests.mm in Sources */,
-				D071C57323AC72CD009BBDF1 /* saturation_test.cpp in Sources */,
+				D0DBC09B23E657CC00663828 /* veh_model_bikeKinematic_test.cpp in Sources */,
+				D0DBC09D23E657CC00663828 /* SIL_bikeKine.cpp in Sources */,
+				D0DBC09623E657CC00663828 /* saturation_test.cpp in Sources */,
+				D0DBC09723E657CC00663828 /* interpolation_1d_test.cpp in Sources */,
 				D09E00EE23C3B3E1006BFDB0 /* Euler.cpp in Sources */,
 				D09E00F423C4167F006BFDB0 /* mass_spring_damper.cpp in Sources */,
 			);

@@ -119,4 +119,3 @@ TEST_F(sysMSDTest_General, systemProperpiesSettable)
     EXPECT_EQ(sys->getDamper(), b);
     EXPECT_EQ(sys->getSpring(), k);
 }
-

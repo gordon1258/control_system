@@ -97,7 +97,7 @@ void sysMSD::dynSys(double F)
     xDot.xDot1 = x.x2;
     xDot.xDot2 = -(k_ / m_) * x.x1 - (b_ / m_) * x.x2 + (F / m_);
     
-    // Integration
+    // Integral
     elr1->solver(xDot.xDot1);
     elr2->solver(xDot.xDot2);
     

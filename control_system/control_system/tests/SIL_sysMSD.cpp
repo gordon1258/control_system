@@ -1,14 +1,12 @@
 //
-//  main.cpp
-//  control_system
+//  SIL_sysMSD.cpp
+//  control_systemUT
 //
-//  Created by Li-Cheng Hsu on 12/16/19.
-//  Copyright © 2019 Li-Cheng Hsu. All rights reserved.
+//  Created by Li-Cheng Hsu on 1/31/20.
+//  Copyright © 2020 Li-Cheng Hsu. All rights reserved.
 //
 
-#include <iostream>
-
-// google test headers
+#include <stdio.h>
 #include "gtest/gtest.h"
 
 // GNUplot headers
@@ -17,15 +15,11 @@
 #include <vector>
 #include <boost/tuple/tuple.hpp>
 
-#include <Eigen/Dense>
-
-// system headers
 #include "mass_spring_damper.hpp"
 #include "pid.hpp"
 
-int main(int argc, const char * argv[]) {
-    
-    /*
+TEST(SIL_sysMSD_pid, SIL_test_sysMSD_pid)
+{
     // Mass-spring-damper system with PID controller
     sysMSD* sys;
     pid* pidCtrl;
@@ -96,7 +90,7 @@ int main(int argc, const char * argv[]) {
             F = pidCtrl->getCmdCtrl().cmdCtrl;
         
         // Push the states, outputs, and errors for plotting
-        std::cout << "t = " << sys->getCurTime() << std::endl;
+        std::cout << "t = " << sys->getCurTime() << ", ";
         std::cout << "x = " << sys->getState().x1 << std::endl;
         x_t.push_back(std::make_pair(sys->getCurTime(), sys->getState().x1));
         v_t.push_back(std::make_pair(sys->getCurTime(), sys->getState().x2));
@@ -135,6 +129,4 @@ int main(int argc, const char * argv[]) {
     gp << "set ylabel 'force [N]'" << std::endl;
     gp << "plot '-' with lines title 'force'"<<std::endl;
     gp.send1d(F_t);
-    */
-    return 0;
 }
